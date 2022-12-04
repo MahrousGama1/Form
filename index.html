@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="images/1096890.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+</head>
+
+<body>
+    <div class="container w-50">
+        <div class="text-center my-3 bg-primary rounded-1">
+            <h2 class="text-light py-2 ">Registration Form</h2>
+        </div>
+        <form action="welcome_page.php" method="post">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First Name" name="FName" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last Name" name="LName" required>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" class="form-control" id="email" placeholder="ex: myname@example.com" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Password :</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="phone" class="form-label" >Phone Number :</label>
+                <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+            </div>
+            <div>
+                <label for="phone" class="form-label" >Country of Birth :</label>
+                <select class="form-select">
+                    <option>Egypt</option>
+                    <option>United States</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>Cameroon</option>
+                    <option>Denmark</option>
+                    <option>Ghana</option>
+                    <option>France</option>
+                    <option>Gabon</option>
+                    <option>Italy</option>
+                    <option>Iraq</option>
+                    <option>Japan</option>
+                    <option>Lebanon</option>
+                    <option>Oman</option>
+
+                </select>
+            </div>
+            <!-- <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                <label class="form-check-label">Option 1</label>
+            </div> -->
+            <label class="form-check-label mt-3">Sex</label>
+            <div class="row mt-2 container">
+                <div class="form-check col">
+                    <input type="radio" class="form-check-input" id="male" name="optradio" >
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check col">
+                    <input type="radio" class="form-check-input" id="female" name="optradio" >
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="mb-2" for="comment">Comments : </label>
+                <textarea class="form-control " rows="5" id="comment" name="text"></textarea>
+            </div>
+            <button type="submit" class="btn w-100 btn-outline-primary mb-4">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
